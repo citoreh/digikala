@@ -393,7 +393,8 @@
         }
 
         .seller-card, .delivery-card, .service-card, .eco-card, .success-story, .coverage-item, .contact-channel,
-        .ai-card, .ai-feature, .app-card, .app-feature-item, .tech-card, .tech-innovation, .innovation-card, .coming-soon {
+        .ai-card, .ai-feature, .app-card, .app-feature-item, .tech-card, .tech-innovation, .innovation-card, .coming-soon,
+        .stat-bubble, .share-btn, .challenge-template, .leaderboard-item {
             background: rgba(255,255,255,0.15);
             backdrop-filter: blur(10px);
             border-radius: 15px;
@@ -408,13 +409,15 @@
         .seller-card.visible, .delivery-card.visible, .service-card.visible, .eco-card.visible, 
         .success-story.visible, .coverage-item.visible, .contact-channel.visible,
         .ai-card.visible, .ai-feature.visible, .app-card.visible, .app-feature-item.visible,
-        .tech-card.visible, .tech-innovation.visible, .innovation-card.visible, .coming-soon.visible {
+        .tech-card.visible, .tech-innovation.visible, .innovation-card.visible, .coming-soon.visible,
+        .stat-bubble.visible, .share-btn.visible, .challenge-template.visible, .leaderboard-item.visible {
             transform: translateY(0);
             opacity: 1;
         }
 
         .seller-card:hover, .delivery-card:hover, .service-card:hover, .eco-card:hover,
-        .ai-card:hover, .app-card:hover, .tech-card:hover, .innovation-card:hover {
+        .ai-card:hover, .app-card:hover, .tech-card:hover, .innovation-card:hover,
+        .stat-bubble:hover, .challenge-template:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
@@ -1008,464 +1011,6 @@
         </div>
     </section>
 
-    <!-- Seller Success Stories Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white;">
-        <div style="max-width: 1200px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🏪 داستان‌های موفقیت فروشندگان</h2>
-                <p>فروشندگان عزیز ما قهرمان‌های واقعی سال ۱۴۰۲ بودند! ببینید چه دستاوردهای شگفت‌انگیزی کسب کردند...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                <div class="seller-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۱۸۵٪</div>
-                    <div style="font-size: 1.1rem;">میانگین رشد فروش سالانه</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">فروشندگان کوچک، رشد بزرگ!</div>
-                </div>
-                
-                <div class="seller-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۱۲۰۰</div>
-                    <div style="font-size: 1.1rem;">فروشنده جدید موفق</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">از صفر تا قهرمان در یک سال</div>
-                </div>
-                
-                <div class="seller-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۴۸ میلیارد</div>
-                    <div style="font-size: 1.1rem;">درآمد فروشندگان (تومان)</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">رکورد تاریخی درآمدزایی</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px);">
-                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">داستان موفقیت ویژه</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
-                    <div class="success-story" data-delay="0">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">👨‍💼</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">آقای احمدی</div>
-                        <div style="font-size: 0.9rem;">از ۵ سفارش روزانه به ۵۰۰ سفارش!</div>
-                    </div>
-                    <div class="success-story" data-delay="200">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">👩‍💼</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">خانم زمانی</div>
-                        <div style="font-size: 0.9rem;">کسب‌وکار خانگی به برند ملی تبدیل شد</div>
-                    </div>
-                    <div class="success-story" data-delay="400">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">🏭</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">کارخانه نساجی کاشان</div>
-                        <div style="font-size: 0.9rem;">صادرات محصولات به ۱۵ کشور</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Delivery Excellence Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white;">
-        <div style="max-width: 1200px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🚚 قدرت تحویل سریع</h2>
-                <p>سرعت نور؟ نه! سرعت دیجی‌کالا! ببینید چطور سفارش‌هایتان با سرعت باورنکردنی به دستتان رسید...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <div class="delivery-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۲۴ ساعت</div>
-                    <div style="font-size: 1.1rem;">میانگین زمان تحویل</div>
-                </div>
-                
-                <div class="delivery-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۱۴۵۰</div>
-                    <div style="font-size: 1.1rem;">شهر تحت پوشش</div>
-                </div>
-                
-                <div class="delivery-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۹۸.۵٪</div>
-                    <div style="font-size: 1.1rem;">تحویل موفق</div>
-                </div>
-                
-                <div class="delivery-card" data-delay="600">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚛</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۸۵۰۰</div>
-                    <div style="font-size: 1.1rem;">پیک فعال</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <div class="delivery-map" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);">
-                    <h3 style="text-align: center; margin-bottom: 2rem;">پوشش سراسری ما</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
-                        <div class="coverage-item" data-delay="0">
-                            <div style="font-size: 1.5rem;">🏔️</div>
-                            <div style="font-weight: bold;">شمال کشور</div>
-                            <div style="font-size: 0.9rem;">۱۰۰٪ پوشش</div>
-                        </div>
-                        <div class="coverage-item" data-delay="200">
-                            <div style="font-size: 1.5rem;">🏜️</div>
-                            <div style="font-weight: bold;">مناطق مرکزی</div>
-                            <div style="font-size: 0.9rem;">۹۸٪ پوشش</div>
-                        </div>
-                        <div class="coverage-item" data-delay="400">
-                            <div style="font-size: 1.5rem;">🌊</div>
-                            <div style="font-weight: bold;">جنوب کشور</div>
-                            <div style="font-size: 0.9rem;">۹۵٪ پوشش</div>
-                        </div>
-                        <div class="coverage-item" data-delay="600">
-                            <div style="font-size: 1.5rem;">⛰️</div>
-                            <div style="font-weight: bold;">مناطق کوهستانی</div>
-                            <div style="font-size: 0.9rem;">۸۷٪ پوشش</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer Service Excellence -->
-    <section class="story-section" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🎧 خدمات مشتریان فوق‌العاده</h2>
-                <p>تیم پشتیبانی ما ۲۴/۷ آماده خدمت! ببینید چطور مشکلاتتان را در کمترین زمان حل کردیم...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <div class="service-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📞</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۴۵ ثانیه</div>
-                    <div style="font-size: 1.1rem;">میانگین پاسخگویی</div>
-                </div>
-                
-                <div class="service-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">😊</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۹۶٪</div>
-                    <div style="font-size: 1.1rem;">رضایت از پشتیبانی</div>
-                </div>
-                
-                <div class="service-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔄</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۹۲٪</div>
-                    <div style="font-size: 1.1rem;">حل مشکل در اولین تماس</div>
-                </div>
-                
-                <div class="service-card" data-delay="600">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💬</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۱۲ میلیون</div>
-                    <div style="font-size: 1.1rem;">تماس پاسخ داده شده</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; text-align: center;">
-                <div style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);">
-                    <h3 style="margin-bottom: 1.5rem;">کانال‌های ارتباطی ما</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1.5rem;">
-                        <div class="contact-channel" data-delay="0">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
-                            <div>تلفن</div>
-                        </div>
-                        <div class="contact-channel" data-delay="100">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💬</div>
-                            <div>چت آنلاین</div>
-                        </div>
-                        <div class="contact-channel" data-delay="200">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📧</div>
-                            <div>ایمیل</div>
-                        </div>
-                        <div class="contact-channel" data-delay="300">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📲</div>
-                            <div>اپلیکیشن</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI & Technology Innovation Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-        <div style="max-width: 1200px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🤖 انقلاب هوش مصنوعی دیجی‌کالا</h2>
-                <p>سال ۱۴۰۲ سال هوش مصنوعی بود! ببینید چطور AI زندگی خریدتان را راحت‌تر کرد...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <div class="ai-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۸۷٪</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">دقت پیشنهادات هوشمند</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">AI می‌داند شما چه می‌خواهید!</div>
-                </div>
-                
-                <div class="ai-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۹۲٪</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">بهبود جستجوی صوتی</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">حرف بزنید، ما پیدا می‌کنیم!</div>
-                </div>
-                
-                <div class="ai-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۵ ثانیه</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">سرعت بارگذاری صفحات</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">سریع‌تر از برق!</div>
-                </div>
-                
-                <div class="ai-card" data-delay="600">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۹۹.۵٪</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">تشخیص کالای تقلبی</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">AI محافظ شماست</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px);">
-                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">ویژگی‌های هوشمند جدید</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                    <div class="ai-feature" data-delay="0">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">🎨</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">جستجوی تصویری</div>
-                        <div style="font-size: 0.9rem;">عکس بگیرید، ما پیدا می‌کنیم</div>
-                    </div>
-                    <div class="ai-feature" data-delay="200">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">💬</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">چت‌بات هوشمند</div>
-                        <div style="font-size: 0.9rem;">پاسخ فوری به سوالاتتان</div>
-                    </div>
-                    <div class="ai-feature" data-delay="400">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">تشخیص رفتار کاربر</div>
-                        <div style="font-size: 0.9rem;">تجربه شخصی‌سازی شده</div>
-                    </div>
-                    <div class="ai-feature" data-delay="600">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">پیش‌بینی تقاضا</div>
-                        <div style="font-size: 0.9rem;">همیشه موجود برای شما</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Innovation Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); color: white;">
-        <div style="max-width: 1200px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>📱 اپلیکیشن نسل جدید</h2>
-                <p>اپ دیجی‌کالا کاملاً متحول شد! ببینید چه ویژگی‌های شگفت‌انگیزی اضافه شده...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div class="app-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">۳۰٪</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">سریع‌تر از نسخه قبل</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">بهینه‌سازی کامل کدها</div>
-                </div>
-                
-                <div class="app-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">تم تیره</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">محافظت از چشمان شما</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">طراحی زیبا و مدرن</div>
-                </div>
-                
-                <div class="app-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">جستجو هوشمند</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">پیشنهاد خودکار کلمات</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">حتی املا اشتباه هم مشکلی نیست!</div>
-                </div>
-                
-                <div class="app-card" data-delay="600">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📲</div>
-                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">آفلاین</div>
-                    <div style="font-size: 1.2rem; font-weight: 600;">مرور بدون اینترنت</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">کش هوشمند محتوا</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <div style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);">
-                    <h3 style="text-align: center; margin-bottom: 2rem;">ویژگی‌های انحصاری اپ</h3>
-                    
-                    <div class="app-features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center;">
-                        <div class="app-feature-item" data-delay="0">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛒</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">خرید سریع</div>
-                            <div style="font-size: 0.9rem;">یک کلیک، خرید کامل</div>
-                        </div>
-                        
-                        <div class="app-feature-item" data-delay="100">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎁</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">جایزه روزانه</div>
-                            <div style="font-size: 0.9rem;">هر روز ورود، هر روز جایزه</div>
-                        </div>
-                        
-                        <div class="app-feature-item" data-delay="200">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔔</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">هشدار قیمت</div>
-                            <div style="font-size: 0.9rem;">کاهش قیمت رو از دست ندید</div>
-                        </div>
-                        
-                        <div class="app-feature-item" data-delay="300">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">پیگیری زنده</div>
-                            <div style="font-size: 0.9rem;">مسیر پیک را ببینید</div>
-                        </div>
-                        
-                        <div class="app-feature-item" data-delay="400">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💳</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">کیف پول دیجیتال</div>
-                            <div style="font-size: 0.9rem;">پرداخت سریع و آسان</div>
-                        </div>
-                        
-                        <div class="app-feature-item" data-delay="500">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
-                            <div style="font-weight: bold; margin-bottom: 0.3rem;">خرید گروهی</div>
-                            <div style="font-size: 0.9rem;">با دوستان تخفیف بگیرید</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Infrastructure Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white;">
-        <div style="max-width: 1200px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🏗️ زیرساخت فن‌آوری قدرتمند</h2>
-                <p>پشت صحنه دیجی‌کالا چه خبر است؟ ببینید چه فناوری‌های پیشرفته‌ای داریم...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <div class="tech-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💾</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۵۰۰ TB</div>
-                    <div style="font-size: 1.1rem; font-weight: 600;">ظرفیت ذخیره‌سازی</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">داده‌های عظیم، مدیریت هوشمند</div>
-                </div>
-                
-                <div class="tech-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۹۹.۹٪</div>
-                    <div style="font-size: 1.1rem; font-weight: 600;">آپتایم سیستم</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">همیشه در دسترس شما</div>
-                </div>
-                
-                <div class="tech-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۲۵۶ بیت</div>
-                    <div style="font-size: 1.1rem; font-weight: 600;">رمزنگاری امنیتی</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">حریم خصوصی شما مقدس است</div>
-                </div>
-                
-                <div class="tech-card" data-delay="600">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۱۵ CDN</div>
-                    <div style="font-size: 1.1rem; font-weight: 600;">شبکه توزیع محتوا</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">سرعت بالا در همه جا</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 20px; backdrop-filter: blur(10px);">
-                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">فناوری‌های نوین</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div class="tech-innovation" data-delay="0">
-                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                            <div style="font-size: 2rem; margin-left: 1rem;">🤖</div>
-                            <div>
-                                <div style="font-weight: bold;">Machine Learning</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8;">الگوریتم‌های یادگیری ماشین</div>
-                            </div>
-                        </div>
-                        <div style="font-size: 0.9rem;">پیش‌بینی رفتار مشتری و بهینه‌سازی موجودی</div>
-                    </div>
-                    
-                    <div class="tech-innovation" data-delay="200">
-                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                            <div style="font-size: 2rem; margin-left: 1rem;">☁️</div>
-                            <div>
-                                <div style="font-weight: bold;">Cloud Computing</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8;">محاسبات ابری مقیاس‌پذیر</div>
-                            </div>
-                        </div>
-                        <div style="font-size: 0.9rem;">زیرساخت انعطاف‌پذیر برای رشد بی‌نهایت</div>
-                    </div>
-                    
-                    <div class="tech-innovation" data-delay="400">
-                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                            <div style="font-size: 2rem; margin-left: 1rem;">📊</div>
-                            <div>
-                                <div style="font-weight: bold;">Big Data Analytics</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8;">تحلیل کلان‌داده‌ها</div>
-                            </div>
-                        </div>
-                        <div style="font-size: 0.9rem;">درک عمیق از نیازهای مشتریان</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Innovation Lab Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🔬 آزمایشگاه نوآوری دیجی‌کالا</h2>
-                <p>آینده را امروز می‌سازیم! ببینید چه فناوری‌های جذابی در راه است...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div class="innovation-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🥽</div>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">واقعیت مجازی</div>
-                    <div style="font-size: 0.95rem; line-height: 1.6;">کالاها را قبل از خرید در خانه‌تان امتحان کنید. فرش، مبل، لوازم خانگی... همه را مجازی در خانه ببینید!</div>
-                </div>
-                
-                <div class="innovation-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚁</div>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">تحویل با پهپاد</div>
-                    <div style="font-size: 0.95rem; line-height: 1.6;">سفارش‌های اورژانسی در کمتر از ۳۰ دقیقه! پهپادهای هوشمند ما آماده پرواز هستند.</div>
-                </div>
-                
-                <div class="innovation-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">AI مکالمه‌ای</div>
-                    <div style="font-size: 0.95rem; line-height: 1.6;">مشاور خرید شخصی که مثل انسان با شما صحبت می‌کند و بهترین پیشنهادها را می‌دهد.</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px);">
-                <h3 style="margin-bottom: 1.5rem; font-size: 1.6rem;">🚀 در حال توسعه</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
-                    <div class="coming-soon" data-delay="0">
-                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🔮</div>
-                        <div style="font-weight: bold; font-size: 0.9rem;">پیش‌بینی نیاز</div>
-                    </div>
-                    <div class="coming-soon" data-delay="100">
-                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🎯</div>
-                        <div style="font-weight: bold; font-size: 0.9rem;">تبلیغات شخصی</div>
-                    </div>
-                    <div class="coming-soon" data-delay="200">
-                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🛍️</div>
-                        <div style="font-weight: bold; font-size: 0.9rem;">خرید صوتی</div>
-                    </div>
-                    <div class="coming-soon" data-delay="300">
-                        <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🤖</div>
-                        <div style="font-weight: bold; font-size: 0.9rem;">ربات انبارداری</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Achievement Badges Section -->
     <section class="story-section" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white;">
         <div style="max-width: 1200px; width: 100%;">
@@ -1557,56 +1102,6 @@
         </div>
     </section>
 
-    <!-- Interactive Progress Journey -->
-    <section class="story-section" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🚀 سفر پیشرفت ما</h2>
-                <p>از ابتدای سال تا الان چه مسیری طی کردیم؟ روی هر مرحله کلیک کنید!</p>
-            </div>
-            
-            <div class="progress-journey" style="margin-top: 3rem;">
-                <div class="journey-path" style="position: relative; background: rgba(255,255,255,0.1); border-radius: 50px; height: 100px; margin: 2rem 0;">
-                    <div id="journey-progress" style="height: 100%; background: linear-gradient(90deg, #f39c12, #e74c3c); border-radius: 50px; width: 0%; transition: width 2s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem;">
-                        <div style="background: white; color: #e74c3c; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">0%</div>
-                    </div>
-                </div>
-                
-                <div class="journey-milestones" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 2rem;">
-                    <div class="milestone" data-progress="20" onclick="progressTo(20)">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-                        <div style="font-weight: bold;">هدف‌گذاری</div>
-                        <div style="font-size: 0.9rem;">فروردین ۱۴۰۲</div>
-                    </div>
-                    
-                    <div class="milestone" data-progress="40" onclick="progressTo(40)">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</div>
-                        <div style="font-weight: bold;">شروع قدرتمند</div>
-                        <div style="font-size: 0.9rem;">اردیبهشت ۱۴۰۲</div>
-                    </div>
-                    
-                    <div class="milestone" data-progress="60" onclick="progressTo(60)">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
-                        <div style="font-weight: bold;">انقلاب AI</div>
-                        <div style="font-size: 0.9rem;">شهریور ۱۴۰۲</div>
-                    </div>
-                    
-                    <div class="milestone" data-progress="80" onclick="progressTo(80)">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
-                        <div style="font-weight: bold;">رشد نجومی</div>
-                        <div style="font-size: 0.9rem;">آبان ۱۴۰۲</div>
-                    </div>
-                    
-                    <div class="milestone" data-progress="100" onclick="progressTo(100)">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
-                        <div style="font-weight: bold;">تحقق رویا</div>
-                        <div style="font-size: 0.9rem;">اسفند ۱۴۰۲</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Interactive Challenge Section -->
     <section class="story-section" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white;">
         <div style="max-width: 800px; width: 100%;">
@@ -1650,337 +1145,6 @@
         </div>
     </section>
 
-    <!-- Social Sharing Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>📤 اشتراک‌گذاری دستاوردها</h2>
-                <p>امتیاز و مدال‌هایتان را با دوستان به اشتراک بگذارید! چالش کنید و ببینید کی بهتر عمل می‌کند...</p>
-            </div>
-            
-            <div class="sharing-dashboard" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px); margin-top: 2rem;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">آمار شخصی شما</div>
-                    <div id="personal-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                        <div class="stat-bubble">
-                            <div style="font-size: 1.5rem; font-weight: bold;" id="share-total-score">0</div>
-                            <div style="font-size: 0.9rem;">امتیاز کل</div>
-                        </div>
-                        <div class="stat-bubble">
-                            <div style="font-size: 1.5rem; font-weight: bold;" id="share-badges-count">0</div>
-                            <div style="font-size: 0.9rem;">مدال کسب شده</div>
-                        </div>
-                        <div class="stat-bubble">
-                            <div style="font-size: 1.5rem; font-weight: bold;" id="share-level-name">تازه‌کار</div>
-                            <div style="font-size: 0.9rem;">رتبه فعلی</div>
-                        </div>
-                        <div class="stat-bubble">
-                            <div style="font-size: 1.5rem; font-weight: bold;" id="completion-percentage">0%</div>
-                            <div style="font-size: 0.9rem;">تکمیل گزارش</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sharing-options" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-                    <button class="share-btn" onclick="shareToSocial('twitter')" style="background: #1da1f2; border: none; color: white; padding: 1rem; border-radius: 15px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                        <span style="font-size: 1.2rem;">🐦</span>
-                        <span>اشتراک در توییتر</span>
-                    </button>
-                    
-                    <button class="share-btn" onclick="shareToSocial('linkedin')" style="background: #0077b5; border: none; color: white; padding: 1rem; border-radius: 15px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                        <span style="font-size: 1.2rem;">💼</span>
-                        <span>اشتراک در لینکدین</span>
-                    </button>
-                    
-                    <button class="share-btn" onclick="shareToSocial('telegram')" style="background: #0088cc; border: none; color: white; padding: 1rem; border-radius: 15px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                        <span style="font-size: 1.2rem;">✈️</span>
-                        <span>اشتراک در تلگرام</span>
-                    </button>
-                    
-                    <button class="share-btn" onclick="copyShareLink()" style="background: #6c757d; border: none; color: white; padding: 1rem; border-radius: 15px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                        <span style="font-size: 1.2rem;">🔗</span>
-                        <span>کپی لینک</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Friend Challenge Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>⚔️ چالش دوستان</h2>
-                <p>دوستانتان را به چالش بکشید! ببینید کی بهتر می‌تواند گزارش دیجی‌کالا را کاوش کند...</p>
-            </div>
-            
-            <div class="challenge-creator" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px); margin-top: 2rem;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
-                    <div style="font-size: 1.5rem; font-weight: bold;">چالش شخصی‌سازی شده بسازید</div>
-                </div>
-                
-                <div class="challenge-form" style="display: grid; gap: 1.5rem;">
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">نام دوست:</label>
-                        <input type="text" id="friend-name" placeholder="نام دوستتان را وارد کنید..." style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem;">
-                    </div>
-                    
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">نوع چالش:</label>
-                        <select id="challenge-type" style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem;">
-                            <option value="score">چالش امتیاز بالا</option>
-                            <option value="speed">چالش سرعت</option>
-                            <option value="knowledge">چالش دانش</option>
-                            <option value="completion">چالش تکمیل</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">پیام شخصی (اختیاری):</label>
-                        <textarea id="personal-message" placeholder="پیام تشویقی یا شوخی برای دوستتان..." style="width: 100%; padding: 1rem; border: none; border-radius: 10px; font-size: 1rem; height: 80px; resize: vertical;"></textarea>
-                    </div>
-                    
-                    <button onclick="createChallenge()" style="background: #f39c12; border: none; color: white; padding: 1.2rem; border-radius: 15px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
-                        🚀 ایجاد چالش و ارسال
-                    </button>
-                </div>
-            </div>
-
-            <div class="challenge-templates" style="margin-top: 3rem;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="font-size: 1.3rem; font-weight: bold;">قالب‌های آماده چالش</div>
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div class="challenge-template" onclick="useTemplate('competitive')" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent;">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">چالش رقابتی</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">"فکر می‌کنی بهتر از من گزارش دیجی‌کالا رو می‌شناسی؟"</div>
-                    </div>
-                    
-                    <div class="challenge-template" onclick="useTemplate('friendly')" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent;">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">😊</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">چالش دوستانه</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">"بیا با هم گزارش دیجی‌کالا رو کاوش کنیم!"</div>
-                    </div>
-                    
-                    <div class="challenge-template" onclick="useTemplate('funny')" style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent;">
-                        <div style="font-size: 2rem; margin-bottom: 1rem;">😂</div>
-                        <div style="font-weight: bold; margin-bottom: 0.5rem;">چالش طنز</div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">"شرط می‌بندم نمی‌تونی تو این چالش من رو شکست بدی!"</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof & Leaderboard -->
-    <section class="story-section" style="background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🏅 تابلو افتخارات</h2>
-                <p>ببینید دیگران چه امتیازهایی کسب کرده‌اند! شما در چه رتبه‌ای قرار دارید؟</p>
-            </div>
-            
-            <div class="leaderboard" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px); margin-top: 2rem;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">👑</div>
-                    <div style="font-size: 1.5rem; font-weight: bold;">برترین کاوشگران</div>
-                </div>
-                
-                <div class="leaderboard-list">
-                    <div class="leaderboard-item rank-1" style="display: flex; align-items: center; padding: 1rem; margin: 1rem 0; background: rgba(255,215,0,0.2); border-radius: 15px; border-right: 4px solid #ffd700;">
-                        <div style="font-size: 2rem; margin-left: 1rem;">🥇</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: bold; font-size: 1.1rem;">علی محمدی</div>
-                            <div style="font-size: 0.9rem; opacity: 0.8;">💎 استاد</div>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-weight: bold; font-size: 1.2rem;">587 امتیاز</div>
-                            <div style="font-size: 0.8rem; opacity: 0.8;">6/6 مدال</div>
-                        </div>
-                    </div>
-                    
-                    <div class="leaderboard-item rank-2" style="display: flex; align-items: center; padding: 1rem; margin: 1rem 0; background: rgba(192,192,192,0.2); border-radius: 15px; border-right: 4px solid #c0c0c0;">
-                        <div style="font-size: 2rem; margin-left: 1rem;">🥈</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: bold; font-size: 1.1rem;">سارا احمدی</div>
-                            <div style="font-size: 0.9rem; opacity: 0.8;">🥇 کارشناس</div>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-weight: bold; font-size: 1.2rem;">425 امتیاز</div>
-                            <div style="font-size: 0.8rem; opacity: 0.8;">5/6 مدال</div>
-                        </div>
-                    </div>
-                    
-                    <div class="leaderboard-item rank-3" style="display: flex; align-items: center; padding: 1rem; margin: 1rem 0; background: rgba(205,127,50,0.2); border-radius: 15px; border-right: 4px solid #cd7f32;">
-                        <div style="font-size: 2rem; margin-left: 1rem;">🥉</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: bold; font-size: 1.1rem;">رضا زمانی</div>
-                            <div style="font-size: 0.9rem; opacity: 0.8;">🥇 کارشناس</div>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-weight: bold; font-size: 1.2rem;">398 امتیاز</div>
-                            <div style="font-size: 0.8rem; opacity: 0.8;">4/6 مدال</div>
-                        </div>
-                    </div>
-                    
-                    <div class="your-rank" style="display: flex; align-items: center; padding: 1rem; margin: 2rem 0 1rem 0; background: rgba(243,156,18,0.3); border-radius: 15px; border: 2px solid #f39c12;">
-                        <div style="font-size: 2rem; margin-left: 1rem;">📍</div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: bold; font-size: 1.1rem;">رتبه شما</div>
-                            <div style="font-size: 0.9rem; opacity: 0.8;" id="your-rank-level">🥉 تازه‌کار</div>
-                        </div>
-                        <div style="text-align: left;">
-                            <div style="font-weight: bold; font-size: 1.2rem;"><span id="your-rank-score">0</span> امتیاز</div>
-                            <div style="font-size: 0.8rem; opacity: 0.8;"><span id="your-rank-badges">0</span>/6 مدال</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                    <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">تعداد کل شرکت‌کنندگان: ۱۲,۸۴۳ نفر</div>
-                    <button onclick="refreshLeaderboard()" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">
-                        🔄 بروزرسانی رتبه‌بندی
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Achievement Showcase -->
-    <section class="story-section" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🎖️ نمایشگاه مدال‌ها</h2>
-                <p>مدال‌های کسب شده را به صورت گرافیکی به اشتراک بگذارید!</p>
-            </div>
-            
-            <div class="badge-showcase" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px); margin-top: 2rem;">
-                <div id="shareable-badge-display" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 3rem 2rem; margin-bottom: 2rem; text-align: center; position: relative;">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏆</div>
-                    <div style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;" id="showcase-title">پیشرفت من در گزارش دیجی‌کالا</div>
-                    <div style="font-size: 1.2rem; margin-bottom: 2rem;" id="showcase-subtitle">سال ۱۴۰۲</div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem;" id="showcase-badges">
-                        <!-- Badges will be populated here -->
-                    </div>
-                    
-                    <div style="font-size: 1.1rem; margin-bottom: 1rem;">
-                        <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 25px; margin: 0 0.5rem;">
-                            <span id="showcase-score">0</span> امتیاز
-                        </span>
-                        <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 25px; margin: 0 0.5rem;">
-                            رتبه <span id="showcase-level">تازه‌کار</span>
-                        </span>
-                    </div>
-                    
-                    <div style="font-size: 0.9rem; opacity: 0.8;">🔗 digikala.com/annual-report-2023</div>
-                </div>
-                
-                <div style="text-align: center;">
-                    <button onclick="downloadBadgeImage()" style="background: #f39c12; border: none; color: white; padding: 1rem 2rem; border-radius: 15px; font-size: 1rem; font-weight: bold; cursor: pointer; margin: 0 0.5rem; transition: all 0.3s ease;">
-                        📥 دانلود تصویر
-                    </button>
-                    <button onclick="shareBadgeImage()" style="background: #27ae60; border: none; color: white; padding: 1rem 2rem; border-radius: 15px; font-size: 1rem; font-weight: bold; cursor: pointer; margin: 0 0.5rem; transition: all 0.3s ease;">
-                        📤 اشتراک‌گذاری
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reward System Section -->
-    <section class="story-section" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🎁 سیستم پاداش</h2>
-                <p>با تعامل بیشتر، پاداش‌های بیشتری دریافت کنید! ببینید چه جوایزی در انتظارتان است...</p>
-            </div>
-            
-            <div class="reward-levels" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div class="reward-level" data-level="1">
-                    <div class="reward-icon">🥉</div>
-                    <div class="reward-title">تازه‌کار</div>
-                    <div class="reward-range">0 - 100 امتیاز</div>
-                    <div class="reward-benefit">مطالعه گزارش</div>
-                </div>
-                
-                <div class="reward-level" data-level="2">
-                    <div class="reward-icon">🥈</div>
-                    <div class="reward-title">کاوشگر</div>
-                    <div class="reward-range">101 - 300 امتیاز</div>
-                    <div class="reward-benefit">دسترسی ویژه</div>
-                </div>
-                
-                <div class="reward-level" data-level="3">
-                    <div class="reward-icon">🥇</div>
-                    <div class="reward-title">کارشناس</div>
-                    <div class="reward-range">301 - 500 امتیاز</div>
-                    <div class="reward-benefit">محتوای اختصاصی</div>
-                </div>
-                
-                <div class="reward-level" data-level="4">
-                    <div class="reward-icon">💎</div>
-                    <div class="reward-title">استاد</div>
-                    <div class="reward-range">501+ امتیاز</div>
-                    <div class="reward-benefit">تمام امکانات</div>
-                </div>
-            </div>
-            
-            <div class="current-level-progress" style="margin-top: 3rem; background: rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);">
-                <div style="text-align: center; margin-bottom: 1.5rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">پیشرفت فعلی شما</div>
-                    <div id="user-level" style="font-size: 1.2rem;">🥉 تازه‌کار</div>
-                </div>
-                
-                <div class="level-progress-bar" style="background: rgba(255,255,255,0.2); height: 20px; border-radius: 10px; overflow: hidden; margin-bottom: 1rem;">
-                    <div id="level-progress-fill" style="height: 100%; background: linear-gradient(90deg, #f39c12, #e74c3c); width: 0%; transition: width 1s ease;"></div>
-                </div>
-                
-                <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
-                    <span id="current-level-points">0</span>
-                    <span id="next-level-points">100</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Environmental Impact -->
-    <section class="story-section" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white;">
-        <div style="max-width: 1000px; width: 100%;">
-            <div class="story-text" style="color: white;">
-                <h2>🌱 تأثیر مثبت بر محیط زیست</h2>
-                <p>مسئولیت اجتماعی برای ما مهم است! ببینید چطور به محیط زیست کمک کردیم...</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div class="eco-card" data-delay="0">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📦</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۸۵٪</div>
-                    <div style="font-size: 1.1rem;">بسته‌بندی قابل بازیافت</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">کاهش ضایعات پلاستیکی</div>
-                </div>
-                
-                <div class="eco-card" data-delay="200">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚲</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۳۰٪</div>
-                    <div style="font-size: 1.1rem;">تحویل با وسایل سبز</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">کاهش آلودگی هوا</div>
-                </div>
-                
-                <div class="eco-card" data-delay="400">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌳</div>
-                    <div style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">۵۰۰۰</div>
-                    <div style="font-size: 1.1rem;">درخت کاشته شده</div>
-                    <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">کمپین سبز دیجی‌کالا</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Quiz Section -->
     <section class="story-section quiz-section">
         <div>
@@ -1999,30 +1163,54 @@
     </section>
 
     <script>
-        // Intersection Observer for animations
+        // Intersection Observer for scroll-triggered animations
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
                     
-                    // Animate counters
+                    // Animate counters only when they come into view
                     if (entry.target.classList.contains('stat-card')) {
+                        entry.target.classList.add('visible');
                         const delay = parseInt(entry.target.dataset.delay) || 0;
                         setTimeout(() => animateCounter(entry.target), delay);
                     }
                     
-                    // Animate chart bars
-                    if (entry.target.classList.contains('interactive-chart')) {
+                    // Animate chart bars only when they come into view
+                    else if (entry.target.classList.contains('interactive-chart')) {
+                        entry.target.classList.add('visible');
                         animateChart(entry.target);
                     }
+                    
+                    // Animate story text
+                    else if (entry.target.classList.contains('story-text')) {
+                        entry.target.classList.add('visible');
+                    }
+                    
+                    // Animate timeline items
+                    else if (entry.target.classList.contains('timeline-item')) {
+                        entry.target.classList.add('visible');
+                    }
 
-                    // Animate all card types with delays
-                    if (entry.target.classList.contains('gen-z-card') || 
+                    // Animate achievement badges with progress bars when they come into view
+                    else if (entry.target.classList.contains('achievement-badge')) {
+                        entry.target.classList.add('visible');
+                        // Animate progress bar for achievement
+                        setTimeout(() => {
+                            const progressFill = entry.target.querySelector('.progress-fill');
+                            if (progressFill) {
+                                progressFill.style.width = progressFill.dataset.progress + '%';
+                            }
+                        }, 500);
+                    }
+
+                    // Animate all other card types with staggered delays
+                    else if (entry.target.classList.contains('gen-z-card') || 
                         entry.target.classList.contains('discount-item') ||
                         entry.target.classList.contains('seller-card') ||
                         entry.target.classList.contains('delivery-card') ||
@@ -2039,23 +1227,39 @@
                         entry.target.classList.contains('tech-innovation') ||
                         entry.target.classList.contains('innovation-card') ||
                         entry.target.classList.contains('coming-soon') ||
-                        entry.target.classList.contains('achievement-badge') ||
                         entry.target.classList.contains('milestone') ||
-                        entry.target.classList.contains('reward-level')) {
-                        animateCard(entry.target);
+                        entry.target.classList.contains('reward-level') ||
+                        entry.target.classList.contains('stat-bubble') ||
+                        entry.target.classList.contains('share-btn') ||
+                        entry.target.classList.contains('challenge-template') ||
+                        entry.target.classList.contains('leaderboard-item')) {
+                        animateCardOnScroll(entry.target);
                     }
                 }
             });
         }, observerOptions);
 
-        // Observe all animatable elements
-        document.querySelectorAll('.stat-card, .story-text, .interactive-chart, .timeline-item, .gen-z-card, .discount-item, .seller-card, .delivery-card, .service-card, .eco-card, .success-story, .coverage-item, .contact-channel, .ai-card, .ai-feature, .app-card, .app-feature-item, .tech-card, .tech-innovation, .innovation-card, .coming-soon, .achievement-badge, .milestone, .reward-level').forEach(el => {
-            observer.observe(el);
-        });
+        // Initialize observer after DOM is ready
+        function initializeScrollAnimations() {
+            // Observe all animatable elements
+            document.querySelectorAll('.stat-card, .story-text, .interactive-chart, .timeline-item, .gen-z-card, .discount-item, .seller-card, .delivery-card, .service-card, .eco-card, .success-story, .coverage-item, .contact-channel, .ai-card, .ai-feature, .app-card, .app-feature-item, .tech-card, .tech-innovation, .innovation-card, .coming-soon, .achievement-badge, .milestone, .reward-level, .stat-bubble, .share-btn, .challenge-template, .leaderboard-item').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Generic card animation handler for scroll-triggered animations
+        function animateCardOnScroll(card) {
+            const delay = parseInt(card.dataset.delay) || 0;
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, delay);
+        }
 
         // Counter animation with Persian/English number formatting
         function animateCounter(card) {
             const number = card.querySelector('.stat-number');
+            if (!number) return;
+            
             const target = parseInt(number.dataset.target);
             
             let current = 0;
@@ -2082,14 +1286,6 @@
                     }, index * 300);
                 });
             }, 500);
-        }
-
-        // Generic card animation handler
-        function animateCard(card) {
-            const delay = parseInt(card.dataset.delay) || 0;
-            setTimeout(() => {
-                card.classList.add('visible');
-            }, delay);
         }
 
         // Quiz functionality
@@ -2228,31 +1424,6 @@
             }, 2000);
         }
 
-        // Progress Journey
-        function progressTo(percentage) {
-            const progressBar = document.getElementById('journey-progress');
-            const progressText = progressBar.querySelector('div');
-            
-            progressBar.style.width = percentage + '%';
-            progressText.textContent = percentage + '%';
-            
-            // Update milestone active state
-            document.querySelectorAll('.milestone').forEach(milestone => {
-                milestone.classList.remove('active');
-                if (parseInt(milestone.dataset.progress) <= percentage) {
-                    milestone.classList.add('active');
-                }
-            });
-            
-            // Award points for progress
-            const progressPoints = Math.floor(percentage / 20) * 10;
-            if (progressPoints > 0) {
-                gameState.totalScore += progressPoints;
-                updateScore();
-                updateLevel();
-            }
-        }
-
         // Challenge System
         function checkAnswer(button, isCorrect) {
             const buttons = document.querySelectorAll('.challenge-btn');
@@ -2269,7 +1440,7 @@
                 
                 // Show correct answer
                 buttons.forEach(btn => {
-                    if (btn.onclick.toString().includes('true')) {
+                    if (btn.onclick && btn.onclick.toString().includes('true')) {
                         btn.classList.add('correct');
                     }
                 });
@@ -2312,8 +1483,11 @@
 
         // Level and Score System
         function updateScore() {
-            document.getElementById('current-score').textContent = gameState.totalScore;
-            document.getElementById('challenge-points').textContent = gameState.challengeScore;
+            const scoreElement = document.getElementById('current-score');
+            const challengePointsElement = document.getElementById('challenge-points');
+            
+            if (scoreElement) scoreElement.textContent = gameState.totalScore;
+            if (challengePointsElement) challengePointsElement.textContent = gameState.challengeScore;
         }
 
         function updateLevel() {
@@ -2329,31 +1503,105 @@
             );
             
             if (currentLevel) {
-                document.getElementById('rank-display').textContent = `رتبه: ${currentLevel.name}`;
-                document.getElementById('user-level').textContent = currentLevel.name;
-                
-                // Update reward level highlighting
-                document.querySelectorAll('.reward-level').forEach(level => {
-                    level.classList.remove('current');
-                });
-                
-                const levelIndex = levels.indexOf(currentLevel);
-                const rewardLevels = document.querySelectorAll('.reward-level');
-                if (rewardLevels[levelIndex]) {
-                    rewardLevels[levelIndex].classList.add('current');
+                const rankDisplayElement = document.getElementById('rank-display');
+                if (rankDisplayElement) {
+                    rankDisplayElement.textContent = `رتبه: ${currentLevel.name}`;
                 }
-                
-                // Update progress bar
-                const nextLevel = levels[levelIndex + 1];
-                const currentLevelPoints = gameState.totalScore - currentLevel.min;
-                const levelRange = nextLevel ? nextLevel.min - currentLevel.min : 100;
-                const progressPercentage = Math.min((currentLevelPoints / levelRange) * 100, 100);
-                
-                document.getElementById('level-progress-fill').style.width = progressPercentage + '%';
-                document.getElementById('current-level-points').textContent = gameState.totalScore;
-                document.getElementById('next-level-points').textContent = nextLevel ? nextLevel.min : '∞';
             }
         }
+
+        // Add placeholder functions for missing social sharing functionality
+        function shareToSocial(platform) {
+            const shareText = `من در گزارش سالانه دیجی‌کالا ${gameState.totalScore} امتیاز کسب کردم! شما چطور؟`;
+            
+            const urls = {
+                twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`,
+                linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`,
+                telegram: `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(shareText)}`
+            };
+            
+            if (urls[platform]) {
+                window.open(urls[platform], '_blank');
+                showNotification('✅ اشتراک‌گذاری با موفقیت انجام شد!');
+            }
+        }
+
+        function copyShareLink() {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(window.location.href);
+                showNotification('🔗 لینک با موفقیت کپی شد!');
+            } else {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = window.location.href;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showNotification('🔗 لینک با موفقیت کپی شد!');
+            }
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'share-notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Additional placeholder functions
+        function createChallenge() {
+            const friendName = document.getElementById('friend-name')?.value || 'دوست';
+            const challengeType = document.getElementById('challenge-type')?.value || 'score';
+            
+            showNotification(`چالش برای ${friendName} ایجاد شد! 🎯`);
+        }
+
+        function useTemplate(type) {
+            const templates = {
+                competitive: 'فکر می‌کنی بهتر از من گزارش دیجی‌کالا رو می‌شناسی؟',
+                friendly: 'بیا با هم گزارش دیجی‌کالا رو کاوش کنیم!',
+                funny: 'شرط می‌بندم نمی‌تونی تو این چالش من رو شکست بدی!'
+            };
+            
+            const messageField = document.getElementById('personal-message');
+            if (messageField && templates[type]) {
+                messageField.value = templates[type];
+            }
+            
+            // Update template selection visual feedback
+            document.querySelectorAll('.challenge-template').forEach(t => t.classList.remove('selected'));
+            event.target.closest('.challenge-template').classList.add('selected');
+        }
+
+        function refreshLeaderboard() {
+            showNotification('🔄 رتبه‌بندی بروزرسانی شد!');
+        }
+
+        function downloadBadgeImage() {
+            showNotification('📥 تصویر در حال دانلود است...');
+        }
+
+        function shareBadgeImage() {
+            showNotification('📤 تصویر برای اشتراک‌گذاری آماده شد!');
+        }
+
+        // Add some mouse interaction effects
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.stat-card, .gen-z-card, .seller-card, .delivery-card, .service-card, .eco-card, .ai-card, .app-card, .tech-card, .innovation-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
 
         // Initialize gamification
         function initializeGamification() {
@@ -2368,20 +1616,10 @@
             }, 1000);
         }
 
-        // Add some mouse interaction effects
-        document.querySelectorAll('.stat-card, .gen-z-card, .seller-card, .delivery-card, .service-card, .eco-card, .ai-card, .app-card, .tech-card, .innovation-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
         // Initialize everything when page loads
         window.addEventListener('load', () => {
             initializeGamification();
+            initializeScrollAnimations();
         });
     </script>
 </body>
