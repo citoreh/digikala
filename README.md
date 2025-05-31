@@ -1,2 +1,2 @@
 # digikala
-<a href="">Story Telling</a>
+<a href="story.html">Story Telling</a>
